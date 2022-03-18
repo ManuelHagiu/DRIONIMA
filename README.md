@@ -26,12 +26,21 @@ The team is really looking forward to developing this application, since all of 
 
 
 As a user I want to be able to visualize the old and the real-time meals.
+
 As a user I want to be able to add, edit and remove a specific meal from a specific date from my calendar.
+
 As a user I want to be able to log in into the system in order to see all the data regarding the workout and the meal plan.
+
 As a user I want to add a specific workout for a day in order to know with type of training I will have.
+
 As a user I want to be able to edit a workout in order to change my workout for that day.
+
 As a user I want to be able to remove a workout from my plan-day.
+
 As a user I want to be notified when a specific meal or workout has been skipped.
+
 As a user I want to be able to see the suggestions regarding what meal/workout I should follow.
+
 As a user I want to be able to have a personal profile in order to see all the data regarding my lifestyle.
+
 As a user I want to be able to set an appointment with a personal trainer in order to have more information regarding my workout process.
