@@ -44,3 +44,6 @@ As a user I want to be able to see the suggestions regarding what meal/workout I
 As a user I want to be able to have a personal profile in order to see all the data regarding my lifestyle.
 
 As a user I want to be able to set an appointment with a personal trainer in order to have more information regarding my workout process.
+
+
+https://developer.edamam.com/
