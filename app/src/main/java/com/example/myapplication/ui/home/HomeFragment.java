@@ -24,8 +24,25 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView welcomeText = binding.welcomeText;
+        homeViewModel.getWelcomeMessage().observe(getViewLifecycleOwner(), welcomeText::setText);
+
+        final TextView setGoalMessage= binding.setGoalMessage;
+        homeViewModel.getSetGoalMessage().observe(getViewLifecycleOwner(),setGoalMessage::setText);
+
+        final TextView nameText =binding.nameText;
+        homeViewModel.getNameText().observe(getViewLifecycleOwner(),nameText::setText);
+
+        final TextView descriptionText =binding.descriptionText;
+        homeViewModel.getDescriptionText().observe(getViewLifecycleOwner(),descriptionText::setText);
+
+        final TextView frequencyText =binding.frequencyText;
+        homeViewModel.getFrequencyText().observe(getViewLifecycleOwner(),frequencyText::setText);
+
+        final TextView repetitionText =binding.repetitionText;
+        homeViewModel.getRepetitionText().observe(getViewLifecycleOwner(),repetitionText::setText);
+
+
         return root;
     }
 

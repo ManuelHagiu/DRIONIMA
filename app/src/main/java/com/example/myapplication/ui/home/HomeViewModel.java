@@ -6,14 +6,40 @@ import androidx.lifecycle.ViewModel;
 
 public class HomeViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
+    private final MutableLiveData<String> welcomeMessage,setGoalMessage,nameText,descriptionText,frequencyText,repetitionText;
 
     public HomeViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        welcomeMessage = new MutableLiveData<>();
+        setGoalMessage=new MutableLiveData<>();
+        nameText=new MutableLiveData<>();
+        descriptionText=new MutableLiveData<>();
+        frequencyText=new MutableLiveData<>();
+        repetitionText=new MutableLiveData<>();
+        welcomeMessage.setValue("Welcome back, "+"!");
+        setGoalMessage.setValue("Why not setting a new goal for today?");
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    public LiveData<String> getWelcomeMessage() {
+        return welcomeMessage;
+    }
+
+    public LiveData<String> getSetGoalMessage() {
+        return setGoalMessage;
+    }
+
+    public LiveData<String> getNameText() {
+        return nameText;
+    }
+
+    public LiveData<String> getDescriptionText() {
+        return descriptionText;
+    }
+
+    public LiveData<String> getFrequencyText() {
+        return frequencyText;
+    }
+
+    public LiveData<String> getRepetitionText() {
+        return repetitionText;
     }
 }
