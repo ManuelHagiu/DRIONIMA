@@ -30,6 +30,15 @@ public class WorkoutPlansFragment extends Fragment {
        final TextView chooseGoal = binding.chooseGoal;
         workoutPlansViewModel.getChosenGoal().observe(getViewLifecycleOwner(), chooseGoal::setText);
 
+        final TextView loseWeight = binding.loseWeight;
+        workoutPlansViewModel.getLostWeight().observe(getViewLifecycleOwner(), loseWeight::setText);
+
+        final TextView gainMuscleMass = binding.gainMuscleMass;
+        workoutPlansViewModel.getGainMuscleMass().observe(getViewLifecycleOwner(), gainMuscleMass::setText);
+
+        final TextView getShredded = binding.getShredded;
+        workoutPlansViewModel.getShredded().observe(getViewLifecycleOwner(), getShredded::setText);
+
         return root;
     }
 
