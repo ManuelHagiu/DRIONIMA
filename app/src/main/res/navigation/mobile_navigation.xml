@@ -28,4 +28,11 @@
         android:name="com.example.myapplication.ui.workoutplans.WorkoutPlansFragment"
         android:label="WorkoutPlans"
         tools:layout="@layout/fragment_workoutplans"/>
+
+    <fragment
+        android:id="@+id/nav_set_new_goals"
+        android:name="com.example.myapplication.ui.setNewGoals.SetNewGoalsFragment"
+        android:label="@string/menu_goals"
+        tools:layout="@layout/fragment_set_new_goals" />
+
 </navigation>
