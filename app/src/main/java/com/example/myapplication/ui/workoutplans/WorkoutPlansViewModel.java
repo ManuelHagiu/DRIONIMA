@@ -7,16 +7,22 @@ import androidx.lifecycle.ViewModel;
 public class WorkoutPlansViewModel extends ViewModel {
 
 
-    MutableLiveData<String>  personText;
+    MutableLiveData<String>  personText, chooseGoal;
 
 
     public WorkoutPlansViewModel(){
         personText = new MutableLiveData<>();
-        personText.setValue("The workout plan for today is ready!");
+        chooseGoal = new MutableLiveData<>();
+        chooseGoal.setValue("Choose your goal");
+        personText.setValue("BUILD YOUR PERFECT BODY!");
     }
 
     public LiveData<String> getPersonText()
     {
         return personText;
+    }
+    public LiveData<String> getChosenGoal()
+    {
+        return chooseGoal;
     }
 }

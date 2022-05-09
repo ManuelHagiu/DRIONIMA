@@ -27,6 +27,9 @@ public class WorkoutPlansFragment extends Fragment {
         final TextView personText = binding.personText;
         workoutPlansViewModel.getPersonText().observe(getViewLifecycleOwner(), personText::setText);
 
+       final TextView chooseGoal = binding.chooseGoal;
+        workoutPlansViewModel.getChosenGoal().observe(getViewLifecycleOwner(), chooseGoal::setText);
+
         return root;
     }
 
