@@ -8,28 +8,6 @@
     tools:context=".ui.dailyrecord.DailyRecordFragment">
 
 
-    <SeekBar
-        android:id="@+id/seekBar2"
-        android:layout_width="254dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="156dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/waterText" />
-
-    <TextView
-        android:id="@+id/workoutText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="212dp"
-        android:text="RATE OF YOUR WORKOUT:"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
@@ -41,21 +19,136 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <SeekBar
+        android:id="@+id/waterBar"
+        android:layout_width="254dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:max="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waterText" />
+
+    <TextView
+        android:id="@+id/sleepHoursText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="308dp"
+        android:text="HOURSE OF SLEEP:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/workoutBar"
+        android:layout_width="254dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="148dp"
+        android:max="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waterText" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="68dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_sleep" />
+
+    <TextView
+        android:id="@+id/caloriesNumbersText"
+        android:layout_width="238dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="444dp"
+        android:text="1000 1500    2000   2500   3000+"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waterBar" />
+
+    <TextView
+        android:id="@+id/caloriesCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="460dp"
+        android:text="CALORIES COUNT:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/workoutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="156dp"
+        android:text="RATE OF YOUR WORKOUT:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/sleepBar"
+        android:layout_width="254dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="300dp"
+        android:max="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waterText" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="68dp"
         android:layout_height="75dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_water_glass" />
 
+    <TextView
+        android:id="@+id/sleepNumbersText"
+        android:layout_width="238dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="300dp"
+        android:text="1    2    3    4    5    6    7    8    9    10"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waterBar" />
+
+    <TextView
+        android:id="@+id/workoutGradesText"
+        android:layout_width="238dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="148dp"
+        android:text="1    2    3    4    5    6    7    8    9    10"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waterBar" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="68dp"
         android:layout_height="75dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -66,7 +159,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="16dp"
         android:text="LITRES OF WATER DRANK:"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -74,37 +167,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="68dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_count_calories" />
+
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/caloriesBar"
         android:layout_width="254dp"
         android:layout_height="30dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="444dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/waterText" />
+        app:layout_constraintTop_toBottomOf="@+id/waterText"
+        android:max="3000"/>
 
     <TextView
         android:id="@+id/litrers_bar_text"
         android:layout_width="230dp"
         android:layout_height="24dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
         android:text="1                         2                         3"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
-
-    <TextView
-        android:id="@+id/litrers_bar_text2"
-        android:layout_width="238dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="152dp"
-        android:text="1    2    3    4    5    6    7    8    9    10"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+        app:layout_constraintTop_toBottomOf="@+id/waterBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

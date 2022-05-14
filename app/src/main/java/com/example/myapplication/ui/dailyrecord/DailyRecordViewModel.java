@@ -18,13 +18,13 @@ public class DailyRecordViewModel extends ViewModel {
         sleepText=new MutableLiveData<>();
         sleepHoursText=new MutableLiveData<>();
         waterText.setValue("LITRES OF WATER DRANK:");
-        litresText.setValue("1                2                3");
+        litresText.setValue("1                       2                       3");
         workoutText.setValue("RATE YOUR WORKOUT:");
-        workoutRate.setValue("");
+        workoutRate.setValue("1    2    3    4    5    6    7    8    9   10");
         caloriesText.setValue("CALORIES CONSUMED:");
-        caloriesCountText.setValue("");
+        caloriesCountText.setValue("0   1000   1500   2000   2500+");
         sleepText.setValue("HOURS OF SLEEP:");
-        sleepHoursText.setValue("");
+        sleepHoursText.setValue("1    2    3    4    5    6    7    8    9   10");
     }
 
     public LiveData<String> getWaterText() {
