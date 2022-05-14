@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -38,6 +39,16 @@ public class WorkoutPlansFragment extends Fragment {
 
         final TextView getShredded = binding.getShredded;
         workoutPlansViewModel.getShredded().observe(getViewLifecycleOwner(), getShredded::setText);
+
+        final Button button1 = binding.button1;
+
+        final Button button2 = binding.button2;
+
+        final Button button = binding.button3;
+
+
+
+
 
         return root;
     }
