@@ -15,8 +15,7 @@ public class HomeViewModel extends ViewModel {
         setGoalMessage=new MutableLiveData<>();
         nameText=new MutableLiveData<>();
 
-
-        welcomeMessage.setValue("Welcome back, "+ EmailPasswordActivity.getCurrentUser().getEmail() +"!"); 
+        welcomeMessage.setValue("Welcome back, "+ EmailPasswordActivity.getCurrentUser().getEmail() +"!");
         setGoalMessage.setValue("Why not setting a new goal for today?");
         nameText.setValue("GOAL NAME");
     }
