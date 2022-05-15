@@ -19,6 +19,12 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
+        <activity android:name=".ui.info.MoreInfo"
+            android:exported="true"
+            android:label="MoreInfo"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+
     </application>
 
 </manifest>

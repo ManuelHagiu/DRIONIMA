@@ -15,7 +15,7 @@ public class HomeViewModel extends ViewModel {
         descriptionText=new MutableLiveData<>();
         frequencyText=new MutableLiveData<>();
         repetitionText=new MutableLiveData<>();
-        welcomeMessage.setValue("Welcome back, "+"!");
+        welcomeMessage.setValue("Welcome back "+"!");
         setGoalMessage.setValue("Why not setting a new goal for today?");
     }
 
