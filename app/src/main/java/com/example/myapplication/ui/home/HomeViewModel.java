@@ -4,19 +4,21 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.myapplication.ui.EmailPasswordActivity;
+
 public class HomeViewModel extends ViewModel {
 
-    private final MutableLiveData<String> welcomeMessage,setGoalMessage,nameText,descriptionText,frequencyText,repetitionText;
+    private final MutableLiveData<String> welcomeMessage,setGoalMessage,nameText;
 
     public HomeViewModel() {
         welcomeMessage = new MutableLiveData<>();
         setGoalMessage=new MutableLiveData<>();
         nameText=new MutableLiveData<>();
-        descriptionText=new MutableLiveData<>();
-        frequencyText=new MutableLiveData<>();
-        repetitionText=new MutableLiveData<>();
-        welcomeMessage.setValue("Welcome back, "+"!");
+
+
+        welcomeMessage.setValue("Welcome back, "+ EmailPasswordActivity.getCurrentUser().getEmail() +"!"); 
         setGoalMessage.setValue("Why not setting a new goal for today?");
+        nameText.setValue("GOAL NAME");
     }
 
     public LiveData<String> getWelcomeMessage() {
@@ -31,15 +33,4 @@ public class HomeViewModel extends ViewModel {
         return nameText;
     }
 
-    public LiveData<String> getDescriptionText() {
-        return descriptionText;
-    }
-
-    public LiveData<String> getFrequencyText() {
-        return frequencyText;
-    }
-
-    public LiveData<String> getRepetitionText() {
-        return repetitionText;
-    }
 }

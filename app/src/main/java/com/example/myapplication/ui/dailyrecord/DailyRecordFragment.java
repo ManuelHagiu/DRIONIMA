@@ -1,5 +1,6 @@
 package com.example.myapplication.ui.dailyrecord;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -17,6 +19,7 @@ import com.example.myapplication.databinding.FragmentDailyrecordBinding;
 public class DailyRecordFragment extends Fragment {
     private FragmentDailyrecordBinding binding;
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         DailyRecordViewModel dailyRecordViewModel =
@@ -56,6 +59,7 @@ public class DailyRecordFragment extends Fragment {
         return root;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private void saveDailyRecord(int waterLitres, int workoutRate, int sleepHours, int calories){
         DailyRecord dailyRecord=new DailyRecord(waterLitres,workoutRate,sleepHours,calories);
         System.out.println(dailyRecord.getWaterLitres()+" "+ dailyRecord.getWorkoutRate()+" "+ dailyRecord.getSleepHours()+" "+ dailyRecord.getCaloriesConsumed());

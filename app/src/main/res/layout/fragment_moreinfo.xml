@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="-511dp"
+    tools:context=".ui.info.MoreInfo">
+
+    <Button
+        android:id="@+id/ionutlikded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:text="LinkedIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ionuttext" />
+
+    <Button
+        android:id="@+id/dragoslinked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:text="LinkedIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dragostext" />
+
+    <TextView
+        android:id="@+id/manutext"
+        android:layout_width="358dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:text="Manu ce zice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manuname" />
+
+    <TextView
+        android:id="@+id/manuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Manuel Gabriel Hagiu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nicolalinked" />
+
+    <TextView
+        android:id="@+id/nicolatext"
+        android:layout_width="358dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:text="Nicola ce zice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nicolaname" />
+
+    <TextView
+        android:id="@+id/ionuttext"
+        android:layout_width="358dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:text="Ionut ce zice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ionutname" />
+
+    <TextView
+        android:id="@+id/ionutname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Ionut Adrian Rotaru"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dragoslinked" />
+
+    <TextView
+        android:id="@+id/nicolaname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Nicola Santolini"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ionutlikded" />
+
+    <TextView
+        android:id="@+id/teamheaed"
+        android:layout_width="208dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:text="The team:"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nicolalinked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="LinkedIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nicolatext" />
+
+    <Button
+        android:id="@+id/manulinked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="LinkedIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manutext" />
+
+    <TextView
+        android:id="@+id/dragostext"
+        android:layout_width="356dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:text="Dragos ce zice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dragosname" />
+
+    <TextView
+        android:id="@+id/dragosname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Dragos Emanuel Baias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamheaed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

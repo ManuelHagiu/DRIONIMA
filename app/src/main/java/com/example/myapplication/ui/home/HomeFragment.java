@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.myapplication.databinding.FragmentHomeBinding;
+import com.example.myapplication.ui.setNewGoals.Goal;
 
 public class HomeFragment extends Fragment {
 
@@ -32,16 +35,13 @@ public class HomeFragment extends Fragment {
 
         final TextView nameText =binding.nameText;
         homeViewModel.getNameText().observe(getViewLifecycleOwner(),nameText::setText);
+        final EditText nameInput=binding.nameLabel;
 
-        final TextView descriptionText =binding.descriptionText;
-        homeViewModel.getDescriptionText().observe(getViewLifecycleOwner(),descriptionText::setText);
-
-        final TextView frequencyText =binding.frequencyText;
-        homeViewModel.getFrequencyText().observe(getViewLifecycleOwner(),frequencyText::setText);
-
-        final TextView repetitionText =binding.repetitionText;
-        homeViewModel.getRepetitionText().observe(getViewLifecycleOwner(),repetitionText::setText);
-
+        final Button button=binding.addGoalButton;
+        button.setOnClickListener(view -> {
+            Goal goal=new Goal(nameInput.getText().toString());
+            System.out.println(goal.getGoal());
+        });
 
         return root;
     }

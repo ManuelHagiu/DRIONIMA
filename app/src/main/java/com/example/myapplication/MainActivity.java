@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -14,8 +15,10 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.myapplication.databinding.ActivityMainBinding;
+import com.example.myapplication.ui.EmailPasswordActivity;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -61,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         menu.getItem(0).setOnMenuItemClickListener(v ->{
             navController.navigate(R.id.action_homeFragment_to_settingsFragment);
+            return true;
+        });
+        menu.getItem(1).setOnMenuItemClickListener(v -> {
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(this,EmailPasswordActivity.class));
             return true;
         });
 
