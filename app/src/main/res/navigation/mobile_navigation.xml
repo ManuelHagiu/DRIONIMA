@@ -9,19 +9,12 @@
         android:id="@+id/nav_home"
         android:name="com.example.myapplication.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+    </fragment>
 
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.myapplication.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.myapplication.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+    <action
+        android:id="@+id/action_homeFragment_to_settingsFragment"
+        app:destination="@id/settingsFragment" />
 
     <fragment
         android:id="@+id/nav_daily_record"
@@ -40,5 +33,14 @@
         android:name="com.example.myapplication.ui.setNewGoals.SetNewGoalsFragment"
         android:label="@string/menu_goals"
         tools:layout="@layout/fragment_set_new_goals" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.myapplication.ui.Settings.SettingsFragment"
+        android:label="Settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_homeFragment"
+            app:destination="@id/nav_home" />
+    </fragment>
 
 </navigation>
