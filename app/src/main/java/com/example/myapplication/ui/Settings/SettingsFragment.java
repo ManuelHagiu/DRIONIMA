@@ -34,7 +34,6 @@ public class SettingsFragment extends PreferenceFragmentCompat {
     public void onCreatePreferences(Bundle bundle, String s) {
         addPreferencesFromResource(R.xml.root_preferences);
         setPreferencesFromResource(R.xml.root_preferences,s);
-        Preference preference = this.findPreference("key");
 
     }
 }

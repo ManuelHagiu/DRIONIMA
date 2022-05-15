@@ -13,7 +13,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.myapplication.databinding.FragmentDailyrecordBinding;
-import com.example.myapplication.ui.DailyRecord;
 
 public class DailyRecordFragment extends Fragment {
     private FragmentDailyrecordBinding binding;
