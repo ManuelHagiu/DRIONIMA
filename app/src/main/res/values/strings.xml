@@ -18,4 +18,14 @@
     <string name="menu_goals">Set New Goals</string>
     <string name="setgoal">setGoal</string>
     <string name="basicInteger">0</string>
+    <string name="delete">Delete ALL</string>
+    <string name="title">Title</string>
+
+
+
+    <string name="hint_goal">Goal…</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Goal not saved because it is empty.</string>
+    <string name="add_goal">Add goal</string>
+
 </resources>

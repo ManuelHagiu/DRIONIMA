@@ -38,8 +38,4 @@ public class WorkoutPlansFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
-
-
-
 }
