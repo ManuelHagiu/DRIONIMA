@@ -1,12 +1,16 @@
 package com.example.myapplication.ui.dailyrecord;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -15,6 +19,7 @@ import com.example.myapplication.databinding.FragmentDailyrecordBinding;
 public class DailyRecordFragment extends Fragment {
     private FragmentDailyrecordBinding binding;
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         DailyRecordViewModel dailyRecordViewModel =
@@ -28,24 +33,36 @@ public class DailyRecordFragment extends Fragment {
         final TextView litresText = binding.litrersBarText;
         dailyRecordViewModel.getLitresText().observe(getViewLifecycleOwner(), litresText::setText);
 
-        /*final TextView textView = binding.;
-        dailyRecordViewModel.getWaterText().observe(getViewLifecycleOwner(), textView::setText);
-        final TextView textView = binding.waterText;
-        dailyRecordViewModel.getWaterText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView workoutText = binding.workoutText;
+        dailyRecordViewModel.getWorkoutText().observe(getViewLifecycleOwner(), workoutText::setText);
+        final TextView workoutRate = binding.workoutGradesText;
+        dailyRecordViewModel.getWorkoutRate().observe(getViewLifecycleOwner(), workoutRate::setText);
 
-        final TextView textView = binding.waterText;
-        dailyRecordViewModel.getWaterText().observe(getViewLifecycleOwner(), textView::setText);
-        final TextView textView = binding.waterText;
-        dailyRecordViewModel.getWaterText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView sleepText = binding.sleepHoursText;
+        dailyRecordViewModel.getSleepText().observe(getViewLifecycleOwner(), sleepText::setText);
+        final TextView sleepHours = binding.sleepNumbersText;
+        dailyRecordViewModel.getSleepHoursText().observe(getViewLifecycleOwner(), sleepHours::setText);
 
-        final TextView textView = binding.waterText;
-        dailyRecordViewModel.getWaterText().observe(getViewLifecycleOwner(), textView::setText);
-        final TextView textView = binding.waterText;
-        dailyRecordViewModel.getWaterText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView caloriesCount = binding.caloriesCountText;
+        dailyRecordViewModel.getCaloriesText().observe(getViewLifecycleOwner(), caloriesCount::setText);
+        final TextView caloriesNumbers = binding.caloriesNumbersText;
+        dailyRecordViewModel.getCaloriesCountText().observe(getViewLifecycleOwner(), caloriesNumbers::setText);
 
-*/
+        final SeekBar waterBar= binding.waterBar;
+        final SeekBar workoutBar= binding.workoutBar;
+        final SeekBar sleepBar=binding.sleepBar;
+        final SeekBar caloriesBar=binding.caloriesBar;
+
+        final Button saveButton=binding.saveButton;
+        saveButton.setOnClickListener(view -> saveDailyRecord(waterBar.getProgress(),workoutBar.getProgress(),sleepBar.getProgress(),caloriesBar.getProgress()));
 
         return root;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private void saveDailyRecord(int waterLitres, int workoutRate, int sleepHours, int calories){
+        DailyRecord dailyRecord=new DailyRecord(waterLitres,workoutRate,sleepHours,calories);
+        System.out.println(dailyRecord.getWaterLitres()+" "+ dailyRecord.getWorkoutRate()+" "+ dailyRecord.getSleepHours()+" "+ dailyRecord.getCaloriesConsumed());
     }
 
     @Override

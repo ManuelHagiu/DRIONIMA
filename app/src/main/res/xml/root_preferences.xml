@@ -1,0 +1,58 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="Your identity">
+
+        <EditTextPreference
+            app:key="@string/signature_title"
+            app:title="Name"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="Not specified"
+            app:entries="@array/gender_entries"
+            app:entryValues="@array/gender_values"
+            app:key="reply"
+            app:title="Gender"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_workout"
+        app:title="Your body">
+
+        <SeekBarPreference
+            app:key="weight"
+            app:title="Weight"
+            app:showSeekBarValue="true"
+            app:defaultValue= "60"
+            android:max="150"/>
+        <SeekBarPreference
+            app:key="height"
+            app:title="Height"
+            app:showSeekBarValue="true"
+            android:max="220"
+            app:min="100"
+            app:defaultValue= "170"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
