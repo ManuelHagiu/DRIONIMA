@@ -19,6 +19,12 @@
             android:exported="true"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.EmailPasswordActivity"
+            android:exported="true"
+            android:label="EmailPasswordActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

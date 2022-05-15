@@ -4,6 +4,8 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.myapplication.ui.EmailPasswordActivity;
+
 public class HomeViewModel extends ViewModel {
 
     private final MutableLiveData<String> welcomeMessage,setGoalMessage,nameText,descriptionText,frequencyText,repetitionText;
@@ -15,7 +17,7 @@ public class HomeViewModel extends ViewModel {
         descriptionText=new MutableLiveData<>();
         frequencyText=new MutableLiveData<>();
         repetitionText=new MutableLiveData<>();
-        welcomeMessage.setValue("Welcome back, "+"!");
+        welcomeMessage.setValue("Welcome back, "+ EmailPasswordActivity.getCurrentUser().getEmail() +"!");
         setGoalMessage.setValue("Why not setting a new goal for today?");
     }
 
