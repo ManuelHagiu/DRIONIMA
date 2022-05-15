@@ -47,13 +47,17 @@ public class WorkoutPlansFragment extends Fragment {
             startActivity(intent);
         } );
 
-        //final Button button2 = binding.button2;
+        final Button button2 = binding.button2;
+        button2.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), gainMuscleMass.class);
+            startActivity(intent);
+        });
 
-        //final Button button = binding.button3;
-
-
-
-
+        final Button button3 = binding.button3;
+        button3.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), getShredded.class);
+            startActivity(intent);
+        });
 
         return root;
     }

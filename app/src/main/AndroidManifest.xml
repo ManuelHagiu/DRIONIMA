@@ -10,10 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ui.workoutplans.gainMuscleMass"
+            android:exported="true"
+            android:label="gainMuscleMass"
+            android:theme="@style/Theme.MyApplication.NoActionBar"/>
+        <activity
+            android:name=".ui.workoutplans.getShredded"
+            android:exported="true"
+            android:label="getShredded"
+            android:theme="@style/Theme.MyApplication.NoActionBar"/>
+        <activity
             android:name=".ui.workoutplans.loseWeight"
             android:exported="true"
             android:label="loseWeight"
-            android:theme="@style/Theme.MyApplication.NoActionBar"/>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
