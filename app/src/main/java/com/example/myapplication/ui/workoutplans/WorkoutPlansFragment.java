@@ -1,5 +1,6 @@
 package com.example.myapplication.ui.workoutplans;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,10 +42,14 @@ public class WorkoutPlansFragment extends Fragment {
         workoutPlansViewModel.getShredded().observe(getViewLifecycleOwner(), getShredded::setText);
 
         final Button button1 = binding.button1;
+        button1.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), loseWeight.class);
+            startActivity(intent);
+        } );
 
-        final Button button2 = binding.button2;
+        //final Button button2 = binding.button2;
 
-        final Button button = binding.button3;
+        //final Button button = binding.button3;
 
 
 
