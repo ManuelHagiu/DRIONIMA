@@ -17,6 +17,7 @@
         app:title="Get Shredded"/>
 
     <TextView
+        android:id="@+id/sit_ups"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -32,5 +33,67 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.104"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="68dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_sit_ups"/>
+
+    <TextView
+        android:id="@+id/twists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="388dp"
+        android:text="2. Twists"
+        android:textColor="#1f2212"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sit_ups"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"/>
+    
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="68dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_twists"/>
+
+    <TextView
+        android:id="@+id/planks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="248dp"
+        android:text="3.Planks"
+        android:textColor="#1f2212"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/twists"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="68dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_planks"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
