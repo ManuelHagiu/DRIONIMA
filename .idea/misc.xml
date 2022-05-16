@@ -3,23 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-      InfoFragment
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/activity_main.xml" value="0.14764492753623187" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/app_bar_main.xml" value="0.4221014492753623" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/content_main.xml" value="0.4221014492753623" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/fragment_dailyrecord.xml" value="0.35280797101449274" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/fragment_gallery.xml" value="0.35280797101449274" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/fragment_home.xml" value="0.17502532928064843" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/fragment_info.xml" value="0.22" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/fragment_moreinfo.xml" value="0.1" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/fragment_set_new_goals.xml" value="0.4221014492753623" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/fragment_slideshow.xml" value="0.35280797101449274" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/fragment_workoutplans.xml" value="0.1" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/layout/nav_header_main.xml" value="0.35280797101449274" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/menu/activity_main_drawer.xml" value="0.5541666666666667" />
-        <entry key="..\:/Users/Dragos/Documents/GitHub/DRIONIMA/app/src/main/res/menu/main.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.137" />
-        <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/drawable/ic__running_exercise.xml" value="0.156" />
         <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/drawable/ic_count_calories.xml" value="0.137" />
         <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/drawable/ic_menu_camera.xml" value="0.137" />
         <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/drawable/ic_menu_daily_record.xml" value="0.137" />
@@ -32,12 +16,6 @@
         <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/drawable/ic_sleep.xml" value="0.1" />
         <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/drawable/ic_water_glass.xml" value="0.137" />
         <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/drawable/ic_workout.xml" value="0.137" />
-<<<<<<< HEAD
-        <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/layout/activity_gain_muscle_mass.xml" value="0.14722222222222223" />
-        <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/layout/activity_get_shredded.xml" value="0.14722222222222223" />
-        <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/layout/activity_lose_weight.xml" value="0.22" />
-=======
->>>>>>> eb801cfc0b169562e1feaece0e987702e2c569f6
         <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/layout/activity_main.xml" value="0.275" />
         <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/layout/app_bar_main.xml" value="0.275" />
         <entry key="..\:/Users/Ionut/Documents/GitHub/DRIONIMA/app/src/main/res/layout/content_main.xml" value="0.275" />
@@ -80,6 +58,7 @@
         <entry key="app/src/main/res/drawable/ic_menu_info.xml" value="0.171" />
         <entry key="app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.114" />
         <entry key="app/src/main/res/drawable/ic_menu_workout.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_sleep.xml" value="0.1205" />
         <entry key="app/src/main/res/drawable/ic_water_svgrepo_com.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_workout.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.114" />
