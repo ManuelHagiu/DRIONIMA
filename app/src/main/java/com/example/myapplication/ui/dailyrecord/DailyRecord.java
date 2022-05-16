@@ -10,7 +10,7 @@ import androidx.room.PrimaryKey;
 
 import java.time.LocalDateTime;
 
-@Entity(tableName = "daily_records_table")
+@Entity(tableName = "daily_record_table")
 public class DailyRecord {
     @PrimaryKey
     @NonNull

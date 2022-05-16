@@ -23,6 +23,12 @@
         tools:layout="@layout/fragment_dailyrecord" />
 
     <fragment
+        android:id="@+id/nav_record"
+        android:name="com.example.myapplication.ui.dailyrecordlist.DailyRecordListFragment"
+        android:label="@string/menu_record"
+        tools:layout="@layout/fragment_daily_record_list" />
+
+    <fragment
         android:id="@+id/nav_workout_plans"
         android:name="com.example.myapplication.ui.workoutplans.WorkoutPlansFragment"
         android:label="WorkoutPlans"

@@ -17,9 +17,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
-import com.example.myapplication.databinding.FragmentWorkoutplansBinding;
 import com.example.myapplication.databinding.GoalMainBinding;
 import com.example.myapplication.ui.workoutplans.WorkoutPlansViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -34,8 +32,6 @@ public class SetNewGoalsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState){
-        WorkoutPlansViewModel workoutPlansViewModel = new ViewModelProvider(this).get(WorkoutPlansViewModel.class);
-
         binding = GoalMainBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 

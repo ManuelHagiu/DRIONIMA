@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.dailyrecordlist.DailyRecordListFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BBFFA2"
+        tools:context=".ui.dailyrecordlist.DailyRecordListFragment"
+        >
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/daily_records_list"
+        android:id="@+id/daily_records_recycler"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</androidx.core.widget.NestedScrollView>
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-192dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

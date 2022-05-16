@@ -25,5 +25,10 @@
             android:icon="@drawable/ic_menu_info"
             android:title="@string/menu_info" />
 
+        <item
+            android:id="@+id/nav_record"
+            android:icon="@drawable/ic_menu_daily_record"
+            android:title="@string/menu_record" />
+
     </group>
 </menu>
