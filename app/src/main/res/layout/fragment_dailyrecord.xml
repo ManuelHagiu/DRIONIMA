@@ -65,7 +65,7 @@
         android:layout_marginEnd="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_sleep" />
+         />
 
     <TextView
         android:id="@+id/caloriesNumbersText"
@@ -180,7 +180,7 @@
         android:layout_marginEnd="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_count_calories" />
+         />
 
     <SeekBar
         android:id="@+id/caloriesBar"
