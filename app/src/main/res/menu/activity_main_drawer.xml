@@ -28,14 +28,10 @@
             android:id="@+id/nav_info"
             android:icon="@drawable/ic_menu_info"
             android:title="@string/menu_info" />
-<<<<<<< HEAD
 
         <item
             android:id="@+id/api"
             android:icon="@drawable/ic_planks"
             android:title="API"/>
-
-=======
->>>>>>> 0d5ba728adc814f96a61eaf94c9e385d9cce432d
     </group>
 </menu>
