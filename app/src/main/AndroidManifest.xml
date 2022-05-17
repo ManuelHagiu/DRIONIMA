@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -53,10 +54,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
+
         <activity
-            android:name=".ui.info.MoreInfo"
-=======
+            android:name=".ui.info.MoreInfo"/>
 
         <activity
             android:name=".ui.dailyrecord.DailyRecordActivity"
@@ -69,11 +69,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.info.MoreInfo"
->>>>>>> 0d5ba728adc814f96a61eaf94c9e385d9cce432d
+        <activity
+            android:name=".ui.info.MoreInfo"
             android:exported="true"
             android:label="MoreInfo"
-            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+            android:theme="@style/Theme.MyApplication.NoActionBar"
+            tools:ignore="DuplicateActivity"></activity>
     </application>
 
 </manifest>
