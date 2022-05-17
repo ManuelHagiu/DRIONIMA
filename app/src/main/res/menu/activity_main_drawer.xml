@@ -25,5 +25,10 @@
             android:icon="@drawable/ic_menu_info"
             android:title="@string/menu_info" />
 
+        <item
+            android:id="@+id/api"
+            android:icon="@drawable/ic_planks"
+            android:title="API"/>
+
     </group>
 </menu>
