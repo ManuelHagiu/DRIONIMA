@@ -16,6 +16,7 @@ public class NewGoalActivity extends AppCompatActivity {
     private EditText mEditGoalView;
     private EditText mEditDataView;
     private EditText mEditMuschiView;
+    private EditText mEditRepetitionView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class NewGoalActivity extends AppCompatActivity {
         mEditGoalView = findViewById(R.id.edit_goal);
         mEditDataView = findViewById(R.id.edit_data);
         mEditMuschiView = findViewById(R.id.edit_muschi);
+        mEditRepetitionView = findViewById(R.id.edit_repetition);
 
         final Button button = findViewById(R.id.button_save);
         button.setOnClickListener(view -> {
@@ -31,7 +33,7 @@ public class NewGoalActivity extends AppCompatActivity {
             if (TextUtils.isEmpty(mEditGoalView.getText())) {
                 setResult(RESULT_CANCELED, replyIntent);
             } else {
-                String goal = mEditDataView.getText().toString() + " - " + mEditMuschiView.getText().toString() + " - " + mEditGoalView.getText().toString();
+                String goal = mEditDataView.getText().toString() + " - " + mEditGoalView.getText().toString() + " - "  + mEditMuschiView.getText().toString() + " - " + mEditRepetitionView.getText().toString();
                 replyIntent.putExtra(EXTRA_REPLY, goal);
                 setResult(RESULT_OK, replyIntent);
             }

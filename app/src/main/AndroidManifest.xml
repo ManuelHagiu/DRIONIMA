@@ -53,8 +53,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".ui.info.MoreInfo"
+=======
+
+        <activity
+            android:name=".ui.dailyrecord.DailyRecordActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.info.MoreInfo"
+>>>>>>> 0d5ba728adc814f96a61eaf94c9e385d9cce432d
             android:exported="true"
             android:label="MoreInfo"
             android:theme="@style/Theme.MyApplication.NoActionBar"></activity>

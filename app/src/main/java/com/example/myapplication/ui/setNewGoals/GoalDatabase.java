@@ -51,9 +51,9 @@ public abstract class  GoalDatabase extends RoomDatabase{
                 GoalDao dao = INSTANCE.goalDao();
                 dao.deleteAll();
 
-                Goal goal = new Goal("Hello");
+                Goal goal = new Goal("18-11-2022 - flexibility - triceps - 20");
                 dao.insert(goal);
-                goal = new Goal("World");
+                goal = new Goal("20-11-2022 - long run - calves - 10");
                 dao.insert(goal);
             });
         }

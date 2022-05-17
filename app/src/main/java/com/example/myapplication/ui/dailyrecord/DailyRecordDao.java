@@ -10,13 +10,13 @@ import java.util.List;
 
 @Dao
 public interface DailyRecordDao {
-    @Query("SELECT * FROM daily_records_table ORDER BY dateTime ASC")
+    @Query("SELECT * FROM daily_record_table ORDER BY dateTime ASC")
     LiveData<List<DailyRecord>> getOrderedDailyRecords();
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insert(DailyRecord dailyRecord);
 
-    @Query("DELETE FROM daily_records_table")
+    @Query("DELETE FROM daily_record_table")
     void deleteAll();
 
 }

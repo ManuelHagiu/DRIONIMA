@@ -6,23 +6,27 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 
-import com.example.myapplication.ui.setNewGoals.Goal;
 
 public class DailyRecordListAdapter extends ListAdapter<DailyRecord,DailyRecordViewHolder> {
-    protected DailyRecordListAdapter(@NonNull DiffUtil.ItemCallback<DailyRecord> diffCallback) {
+    public DailyRecordListAdapter(@NonNull DiffUtil.ItemCallback<DailyRecord> diffCallback) {
         super(diffCallback);
     }
 
     @NonNull
     @Override
     public DailyRecordViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        return DailyRecordViewHolder.create(parent);
     }
 
     @Override
     public void onBindViewHolder(@NonNull DailyRecordViewHolder holder, int position) {
         DailyRecord current=getItem(position);
-        holder.bind(current.getDateTime());
+        holder.bind(
+                "WorkoutRate: " + current.getWorkoutRate() +
+                     " WaterLitres: " + current.getWaterLitres() +
+                     " SleepHours: " + current.getSleepHours() +
+                     " CaloriesConsumed: " + current.getCaloriesConsumed()
+        );
     }
 
     public static class DailyRecordDiff extends DiffUtil.ItemCallback<DailyRecord> {

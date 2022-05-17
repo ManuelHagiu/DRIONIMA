@@ -12,8 +12,9 @@
     <string name="menu_workout">Workout Plans</string>
     <string name="menu_daily_record">Daily Record</string>
     <string name="menu_info">Info</string>
+    <string name="menu_record">Record</string>
     <string name="menu_goals">Set New Goals</string>
-    <string name="setgoal">setGoal</string>
+    <string name="setgoal">Set Goal</string>
     <string name="basicInteger">0</string>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
@@ -30,6 +31,8 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="hint_goal">Goal…</string>
+    <string name="hint_data">Data…</string>
+    <string name="hint_muscles">Muscle…</string>
     <string name="button_save">Save</string>
     <string name="empty_not_saved">Goal not saved because it is empty.</string>
     <string name="add_goal">Add goal</string>

@@ -18,17 +18,18 @@ import com.example.myapplication.databinding.FragmentDailyrecordBinding;
 
 public class DailyRecordFragment extends Fragment {
     private FragmentDailyrecordBinding binding;
+    private DailyRecordViewModel dailyRecordViewModel;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DailyRecordViewModel dailyRecordViewModel =
+        dailyRecordViewModel =
                 new ViewModelProvider(this).get(DailyRecordViewModel.class);
 
         binding = FragmentDailyrecordBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView waterText = binding.waterText;
+       final TextView waterText = binding.waterText;
         dailyRecordViewModel.getWaterText().observe(getViewLifecycleOwner(), waterText::setText);
         final TextView litresText = binding.litrersBarText;
         dailyRecordViewModel.getLitresText().observe(getViewLifecycleOwner(), litresText::setText);
@@ -60,9 +61,9 @@ public class DailyRecordFragment extends Fragment {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
-    private void saveDailyRecord(int waterLitres, int workoutRate, int sleepHours, int calories){
+    public void saveDailyRecord(int waterLitres, int workoutRate, int sleepHours, int calories){
         DailyRecord dailyRecord=new DailyRecord(waterLitres,workoutRate,sleepHours,calories);
-        System.out.println(dailyRecord.getWaterLitres()+" "+ dailyRecord.getWorkoutRate()+" "+ dailyRecord.getSleepHours()+" "+ dailyRecord.getCaloriesConsumed());
+        dailyRecordViewModel.insert(dailyRecord);
     }
 
     @Override
