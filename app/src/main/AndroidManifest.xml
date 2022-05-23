@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -13,12 +16,12 @@
             android:name=".ui.workoutplans.gainMuscleMass"
             android:exported="true"
             android:label="gainMuscleMass"
-            android:theme="@style/Theme.MyApplication.NoActionBar"/>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name=".ui.workoutplans.getShredded"
             android:exported="true"
             android:label="getShredded"
-            android:theme="@style/Theme.MyApplication.NoActionBar"/>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name=".ui.workoutplans.loseWeight"
             android:exported="true"
@@ -28,8 +31,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
-            android:theme="@style/Theme.MyApplication.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.MyApplication.NoActionBar"/>
         <activity
             android:name=".ui.EmailPasswordActivity"
             android:exported="true"
@@ -64,12 +66,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.info.MoreInfo"
+        <activity
+            android:name=".ui.info.MoreInfo"
             android:exported="true"
             android:label="MoreInfo"
-            android:theme="@style/Theme.MyApplication.NoActionBar">
-        </activity>
-
+            android:theme="@style/Theme.MyApplication.NoActionBar"
+            tools:ignore="DuplicateActivity"/>
     </application>
 
 </manifest>

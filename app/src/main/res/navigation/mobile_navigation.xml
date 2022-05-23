@@ -47,6 +47,12 @@
         />
 
     <fragment
+        android:id="@+id/api"
+        android:name="com.example.myapplication.ui.API.RetrofitClientFragment"
+        android:label="API"
+        tools:layout="@layout/fragment_api"/>
+
+    <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.myapplication.ui.Settings.SettingsFragment"
         android:label="Settings" >
